@@ -12,7 +12,6 @@ const isPowerOfThree = () => {
 isPowerOfThree()
 
 // chescks to see if the array contains a duplicate
-
 const containsDuplicate = function () {
     let nums = [1, 2, 4, 7, 8, 4]
     const set = new Set(nums)
@@ -20,3 +19,26 @@ const containsDuplicate = function () {
 }
 
 containsDuplicate()
+
+// is anagram 
+
+const isAnagram = function () {
+    var s = "car";
+    var t = 'arc'
+
+    if (s.length !== t.length) return console.log('false')
+
+    var freq = new Array(26).fill(0)
+    for (var i = 0; i < s.length; i++) {
+        freq[s.charCodeAt(i) - 'a'.charCodeAt(0)]++
+        freq[t.charCodeAt(i) - 'a'.charCodeAt(0)]--
+    }
+
+    for(var i = 0; i < freq.length; i++) {
+        if (freq[i] !== 0) return console.log('false')
+    }
+
+    return console.log('true')
+}
+
+isAnagram()
