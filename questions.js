@@ -42,3 +42,26 @@ const isAnagram = function () {
 }
 
 isAnagram()
+
+// reverse string
+
+//const reverseString = function () {
+    //let string = "reverse"
+
+    //let left = 0;
+    //let right = string.length - 1;
+
+    //let newString = ''
+
+    //while (left < right) {
+        //let temp = string[left];
+        //newString[left] = string[right];
+        //newString[right] = temp;
+        //left ++;
+        //right --;
+    //}
+
+    //return console.log(string), console.log(newString)
+//}
+
+//reverseString()
